@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+  <title> Github Finder </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+
+  <style>
+    .navbar{
+    	background-color: lightblue;
+    }
+
+    #main{
+    	border: 2px solid lightblue;
+    }
+
+    #userInput{
+    	display: block;
+    }
+
+    .info{
+    	border: 1px solid grey;
+    	padding-top: 10px;
+    	padding-bottom: 10px;
+    	padding-left: 5px;
+    	margin-bottom: 2px;
+    }
+
+    #image-container{
+     min-width: 300px;
+     max-width: 300px;
+    }
+
+    button{
+    	height: 50px;
+    }
+
+    li{
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .list{
+      border: 2px solid lightblue;
+      padding: 7px 0;
+      margin: -1px 0;
+    }
+
+    .reposTitle{
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .profile-link{
+      text-decoration: none;
+      color: white;
+    }
+
+
+  </style>
+
+
+</head>
+
+<body>
+
+	<nav class="navbar pl-5">
+       <span> Github Finder </span>
+	</nav>	
+
+	<div class="container-fluid mt-5 mb-5" id="container">
+      <div class="row justify-content-center">
+      	<div class="col-sm-8 p-4" id="main">
+           <h2 class="navbrand"> Search Github Users </h2>
+         
+
+           <form class="form-group mt-4" id="form">
+           	 <label for="users" class="mb-3"> Enter a username to fetch a users profile info and repos </label>
+             <input id="userInput" type="text" name="users" class="form-control" placeholder="Github Username..." >
+           </form>  
+      	</div>	
+      </div> 
+  </div>
+       
+
+ <script src="scripts/github.js"> </script>
+ <script src="scripts/ui.js"> </script>
+ <script src="scripts/app.js"> </script>
+</body>	
+
+
+
+</html>
